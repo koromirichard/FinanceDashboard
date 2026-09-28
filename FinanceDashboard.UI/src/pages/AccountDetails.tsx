@@ -17,7 +17,6 @@ const AccountDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTransferModalOpen, setIsTransferModalOpen] = useState(false);
 
-  // Adatok lekérése funkció kiszervezve, hogy a modalok is meg tudják hívni mentés után
   const fetchDetails = useCallback(async () => {
     const token = localStorage.getItem('token');
     if (!token) return navigate('/login');
@@ -65,7 +64,7 @@ const AccountDetails = () => {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (!response.ok) throw new Error('Nem sikerült törölni a tranzakciót.');
-      fetchDetails(); // Újratöltjük az adatokat, hogy az egyenleg frissüljön
+      fetchDetails();
     } catch (err: any) {
       alert(err.message);
     }

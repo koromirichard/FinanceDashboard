@@ -119,7 +119,6 @@ namespace FinanceDashboard.API.Controllers
             }
             catch (Exception ex)
             {
-                // Ha valamiért nem sikerül (pl. nincs elég fedezet, vagy rossz számla), itt dobjuk vissza a hibát
                 return BadRequest(new { message = ex.Message });
             }
         }

@@ -52,8 +52,8 @@ export default function CreateAccountModal({ isOpen, onClose, onSuccess }: Creat
       setNewAccountName('');
       setNewAccountCurrency('HUF');
       setNewAccountBalance('');
-      onSuccess(); // Frissíti a Dashboardot
-      onClose();   // Bezárja a modalt
+      onSuccess();
+      onClose();
     } catch (err: any) { 
       setError(err.message);
     }

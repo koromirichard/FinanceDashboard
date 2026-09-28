@@ -5,7 +5,7 @@ interface AddTransactionModalProps {
   onClose: () => void;
   accountId: number;
   currency: string;
-  onSuccess: () => void; // Ezt hívjuk meg, ha sikeres a mentés, hogy a szülő frissítsen
+  onSuccess: () => void;
 }
 
 export default function AddTransactionModal({ isOpen, onClose, accountId, currency, onSuccess }: AddTransactionModalProps) {

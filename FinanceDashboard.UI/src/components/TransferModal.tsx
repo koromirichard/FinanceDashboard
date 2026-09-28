@@ -17,9 +17,8 @@ export default function TransferModal({ isOpen, onClose, sourceAccount, allAccou
   const [isLoadingRate, setIsLoadingRate] = useState(false);
   const [error, setError] = useState('');
 
-  // Árfolyam betöltése utalásnál
   useEffect(() => {
-    if (!isOpen) return; // Csak akkor töltse, ha nyitva van az ablak
+    if (!isOpen) return;
 
     const fetchRate = async () => {
       if (!destinationId) return;

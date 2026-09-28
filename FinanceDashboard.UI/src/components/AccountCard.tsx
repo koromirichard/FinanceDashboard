@@ -5,7 +5,7 @@ import type { Account } from '../types';
 interface AccountCardProps {
   account: Account;
   formatCurrency: (value: number, currency: string) => string;
-  onChange: () => void; // Meghívjuk szerkesztés vagy törlés után
+  onChange: () => void;
 }
 
 export default function AccountCard({ account, formatCurrency, onChange }: AccountCardProps) {

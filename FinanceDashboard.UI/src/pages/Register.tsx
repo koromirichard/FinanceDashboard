@@ -39,11 +39,9 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 relative overflow-hidden text-slate-200">
       
-      {/* Teljesítménybarát háttér ragyogás */}
       <div className="absolute top-[-300px] right-[-200px] w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(6,78,59,0.4)_0%,transparent_60%)] pointer-events-none z-0" />
       <div className="absolute bottom-[-300px] left-[-200px] w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(30,58,138,0.3)_0%,transparent_60%)] pointer-events-none z-0" />
 
-      {/* Regisztrációs kártya */}
       <form onSubmit={handleRegister} className="relative z-10 p-8 sm:p-10 bg-slate-900/60 backdrop-blur-xl rounded-2xl shadow-2xl border border-slate-700/50 w-full max-w-md mx-4 transform-gpu">
         
         <div className="text-center mb-8">
