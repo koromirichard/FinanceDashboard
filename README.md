@@ -2,6 +2,7 @@ Pénzügyi Vezérlőpult és Vagyonkezelő
 
 Egy teljes körű (full-stack), konténerizált webalkalmazás a személyes pénzügyek nyomon követésére, többdevizás számlák kezelésére és valós idejű árfolyamokkal dolgozó belső átutalásokra.
 
+<img width="1864" height="950" alt="image" src="https://github.com/user-attachments/assets/930d6f41-192b-4324-ad20-ef89918bbfdc" />
 
 
 Főbb funkciók Többdevizás portfóliókezelés: Egyenlegek nyilvántartása hagyományos (HUF, EUR, USD) és kriptovalutákban (BTC, ETH), a devizákhoz igazodó, precíz kerekítési és formázási szabályokkal.
